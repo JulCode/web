@@ -1,6 +1,5 @@
 <?php
-$fname = $_POST['fname'];
-$lname = $_POST['lname'];
+$name = $_POST['name'];
 $mail = $_POST['mail'];
 $phone = $_POST['phone'];
 $message = $_POST['message'];
@@ -10,7 +9,7 @@ $header .= "X-Mailer: PHP/" . phpversion() . " \r\n";
 $header .= "Mime-Version: 1.0 \r\n";
 $header .= "Content-Type: text/plain";
 
-$message = "Este mensaje fue enviado por: " . $fname . " \r\n";
+$message = "Este mensaje fue enviado por: " . $name . " \r\n";
 $message .= "Su e-mail es: " . $mail . " \r\n";
 $message .= "Teléfono de contacto: " . $phone . " \r\n";
 $message .= "Mensaje: " . $_POST['message'] . " \r\n";

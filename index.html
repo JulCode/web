@@ -22,7 +22,7 @@
                 <li><a href="#project" onclick="toggleMenu()">Project</a></li>
                 <li><a href="#contact" onclick="toggleMenu()">Contacts</a></li>
             </ul>
-            <div class="themeSwitch" ></div>
+            <div class="themeSwitch"></div>
         </div>
 
         <div class="main">
@@ -132,6 +132,7 @@
                         </div>
                         <div class="textBx">
                             <h3>Project 01</h3>
+                            <button>hi</button>
                         </div>
                     </div>
                     <div class="workBx">
@@ -168,35 +169,35 @@
                         accusamus eligendi, debitis, aspernatur doloremque ab ullam aliquam ratione excepturi sed sunt
                         aliquid ipsa praesentium accusantium officiis ex.</p>
                 </div>
-                <form class="contactForm" action="enviar.php" method="post">
+                <div class="contactForm" >
                     <div class="row">
-                        <input type="text" name="name"  id="name" placeholder="First Name">
-                        <input type="text" name="lname" id="name2" placeholder="Last Name">
+                        <input type="text" name="name" id="name" placeholder="First Name">
+                        <input type="text" name="lname" id="lname" placeholder="Last Name">
                     </div>
                     <div class="row">
-                        <input type="text" name="mail" id="mail" placeholder="Email Address">
+                        <input type="text" name="mail" id="email" placeholder="Email Address">
                         <input type="text" name="phone" id="phone" placeholder="Phone No.">
                     </div>
                     <div class="row2">
-                        <textarea name="message" id="massage" placeholder="Message"></textarea>
+                        <textarea name="message" id="message" placeholder="Message"></textarea>                      
+                    </div>
+                    <div id="alert" class="row2" >
+                        
                     </div>
                     <div class="row2">
-                        <button type="submit" >Send</button>
+                        <button  onclick="save()" >Send</button>
                     </div>
-
-                </form>
-
+                </div>
             </section>
             <div class="copyright">
                 <p>Copyright © 2021 Julian Vivas. All Right Reserved</p>
             </div>
         </div>
     </div>
-    <script src="script.js">
-
-    </script>
-
-
+      
 </body>
-
+    <script src="script.js"></script>   
+    <script src="https://www.gstatic.com/firebasejs/8.8.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.8.0/firebase-database.js"></script>
+    <script src="database.js"></script>
 </html>

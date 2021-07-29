@@ -460,7 +460,7 @@ p
     resize: none;
     height: 200px;
 }
-.contact .contactForm .row2 button[type="submit"]
+.contact .contactForm .row2 button
 {
     background: var(--black2);
     color: #fff;
@@ -474,7 +474,14 @@ p
     max-width: 150px;
     border: none;
 }
-.dark .contact .contactForm .row2 button[type="submit"]:hover
+.contact .contactForm .row2 button:active
+{
+    background: #1769ab;
+    transform: translateY(3px);
+    box-shadow: 2px 3px rgba(12, 12, 12, 0.6);
+}
+
+.dark .contact .contactForm .row2 button:hover
 {
     background: #2196f3 ;
 }

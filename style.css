@@ -408,6 +408,37 @@ p
     color: #fff;
     font-size: 1em;
 }
+/**/
+
+.project .content .workBx:hover .textBx button
+{
+    position: relative;
+    display: inline-block;   
+    padding: 10px 30px;
+    background: #61dafb;
+    color: #fff;
+    font-weight: 500;
+    letter-spacing: 2px;
+    cursor: pointer;
+    font-size: 16px;
+    text-transform: uppercase;
+    max-width: 150px;
+    border: none;
+
+}
+.project .content .workBx:hover .textBx button:active
+{
+    background: #1769ab;
+    transform: translateY(3px);
+    box-shadow: 2px 3px rgba(12, 12, 12, 0.6);
+}
+
+.dark .project .content .workBx:hover .textBx button:hover
+{
+    background: #2196f3 ;
+}
+
+/**/
 .contact
 {
     display: flex;

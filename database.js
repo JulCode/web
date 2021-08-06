@@ -14,21 +14,21 @@ var database = firebase.database()
 
 function save() {
 
-  if (document.getElementById("name").value != "" || document.getElementById("lname").value != "" || document.getElementById("email").value != "" || document.getElementById("phone").value != "" || document.getElementById("name").value != "") {
-    console.log(document.getElementById("alert").innerHTML = "");
+  if (document.getElementById("name").value != ""|| document.getElementById("email").value != "" || document.getElementById("phone").value != "" || document.getElementById("message").value != "") {
+    document.getElementById("alert").innerHTML = ""
     var fname = document.getElementById("name").value
     var lname = document.getElementById("lname").value
     var email = document.getElementById("email").value
     var phone = document.getElementById("phone").value
     var message = document.getElementById("message").value
 
-    database.ref('client/' + fname).set({
+    database.ref('client/' + uuid.v4() ).set({
       FirstName: fname,
       LastName: lname,
       Email: email,
       Phone: phone,
-      Message: message
-    })
+      Message: message     
+    })   
     document.getElementById("name").value = "";
     document.getElementById("lname").value = "";
     document.getElementById("email").value = "";

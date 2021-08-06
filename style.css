@@ -607,7 +607,9 @@ p
     {
         left: 0;
         width: 100%;
+
     }
+
     .main
     {
         width: 100%;
@@ -626,6 +628,7 @@ p
     .navigation ul
     {
         padding: 20px 20px;
+        height: 70%;
     }
     .banner .content .imgBx
     {

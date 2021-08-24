@@ -1,83 +1,278 @@
-<!doctype html>
-<html lang="es">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Hoja de vida</title>
-<link href="css/style.css" rel="stylesheet" type="text/css">
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--========== BOX ICONS ==========-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+    <!--========== CSS ==========-->
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <title>Responsive resume cv</title>
 </head>
 
-<body background="img/background.jpg">
-<header>
-    <nav>
-      <ul class="nav_links">
-      <li><a href="../sopa de letras/sopa de letras.html">Sopa de letras</a></li>
-      <li><a href="../significadopalabras/Significadopalabras.html"> Significado de palabras</a></li>
-      <li><a href="../hoja de vida/hoja de vida.html"> Hoja de vida</a></li>
-      <li><a href="../cuestionario/cuestionario.html">Cuestionario</a></li>
-	  <li><a href="../consultorio/consultorio.html">Consultorio</a></li>
-	  <li><a href="../consulta1/consulta1.html">Consulta1</a></li>
-        </ul>
-      </nav>
-	<a class="cta" href="../index.html"><button>Inicio</button></a>
-</header>
-	
-	<div class="caja">
-	  <h1 class="texto1">Julian Vivas Estrada</h1>
-</div>
-	
-<section class="mainContent"> 
-  <section class="section1">
-    <h2 class="sectionTitle">Información de contacto&nbsp;<span class="caja"><img src="img/foto.jpg" alt="sample" class="profilePhoto" ></span></h2>
-<hr class="sectionTitleRule">
-    <hr class="sectionTitleRule2">
-    <div class="section1Content">
-      <p><span>Email : julianvivasestrada@gmail.com</span> </p>
-      <p><span>Telefono :(+57) 3043882280</span> </p>
-      <p><span>Dirección: Itagüi, Colombia</span> </p>
-    </div>
-  </section>
-  <section class="section2">
-    <h2 class="sectionTitle">Educación&nbsp;</h2>
-    <hr class="sectionTitleRule">
-    <hr class="sectionTitleRule2">
-    <article class="section2Content">
-      <h2 class="sectionContentTitle">Tecnico de sistemas de información</h2>
-      <h3 class="sectionContentSubTitle">2017 - 2018, Medellin</h3>
-      <p class="sectionContent"> Compucec </p>
-    </article>
-    <article class="section2Content">
-      <h2 class="sectionContentTitle"> Bachiller</h2>
-      <h3 class="sectionContentSubTitle">2012 - 2018, Itagüi</h3>
-      <p class="sectionContent"> Maria Josefa Escobar. </p>
-    </article>
-  </section>
-<section class="section2">
-    <h2 class="sectionTitle">habilidades&nbsp;</h2>
-    <hr class="sectionTitleRule">
-    <hr class="sectionTitleRule2">
-    <article class="section2Content">
-      <h2 class="sectionContentTitle">Leguajes de programación</h2>
-<p class="sectionContent"> HTML HTML5 CSS Python Java C# </p>
-    </article>
-    <article class="section2Content">
-      <h2 class="sectionContentTitle"> Herramientas y Tecnologias&nbsp;</h2>
-<p class="sectionContent"> Visual Studio Netbeans Visual Studio Code Figma Git Sublime Dream Weaver </p>
-    </article> 
-  </section>
-	<section class="section2">
-    <h2 class="sectionTitle">AFICIONES O HOBBYS&nbsp;</h2>
-    <hr class="sectionTitleRule">
-    <hr class="sectionTitleRule2">
-    <article class="section2Content">
-<p class="sectionContent"> Jugar video juegos, aprender sobre nuevas tecnoligias de inteligencia artificial&nbsp; </p>
-    </article> 
-  </section>
-  <aside class="externalResourcesNav"> <span class="stretch"></span>
-    <span class="stretch"></span>
-    <div class="externalResources"><a href="https://github.com/jvivas-coder" title="Github Link">GITHUB</a> </div>
-  </aside>
-</section>
+<body>
+    <!--========== HEADER ==========-->
+    <header class="l-header" id="header">
+        <nav class="nav bd-container">
+            <a href="#" class="nav_logo">Julian</a>
+
+            <div class="nav_menu" id="nav-menu">
+                <ul class="nav_list">
+                    <li class="nav_item">
+                        <a href="#home" class="nav_link active-link">
+                            <i class='bx bx-home nav_icon'></i>Home
+                        </a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#profile" class="nav_link">
+                            <i class='bx bx-user nav_icon'></i>Profile
+                        </a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#education" class="nav_link">
+                            <i class='bx bx-book nav_icon'></i>Education
+                        </a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#skills" class="nav_link">
+                            <i class='bx bx-receipt nav_icon'></i>Skills
+                        </a>
+                    </li>
+                    <!--<li class="nav_item">
+                        <a href="#experience" class="nav_link">
+                            <i class='bx bx-briefcase nav_icon'></i>Experience
+                        </a>
+                    </li>-->
+                    <li class="nav_item">
+                        <a href="#certificates" class="nav_link">
+                            <i class='bx bx-award nav_icon'></i>Certificates
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+            <div class="nav_toggle" id="nav-toggle">
+                <i class='bx bx-grid-alt'></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="l-main bd-container">
+        <!-- All elements within this div, is generated in PDF -->
+        <div class="resume" id="area-cv">
+            <div class="resume__left">
+                <!--========== HOME ==========-->
+                <section class="home" id="home">
+                    <div class="home__container section bd-grid">
+                        <div class="home__data bd-grid">
+                            <img src="assets/img/perfil.jpg" alt="" class="home__img">
+
+                            <h1 class="home__title">Julian <b>Vivas</b></h1>
+                            <h3 class="home__profession">Web developer</h3>
+                            <div>
+                                <a download="" href="assets/pdf/ResumeCv.pdf" class="home__button-movil">Download</a>
+                            </div>
+                        </div>
+                        <div class="home__address bd-grid">
+                            <span class="home__information">
+                                <i class="bx bx-map home__icon"></i> Medellin, Colombia.
+                            </span>
+                            <span class="home__information">
+                                <i class="bx bx-envelope home__icon"></i> julianve351@gmail.com
+                            </span>
+                            <span class="home__information">
+                                <i class="bx bx-phone home__icon"></i> 304-388-2280
+                            </span>
+                        </div>
+                    </div>
+
+                </section>
+
+                <!--========== SOCIAL ==========-->
+
+                <section class="social section" >
+                    <h2 class="section-title">SOCIAL</h2>
+                    <div class="social__container bd-grid">
+                        <a href="" target="_blank" class="social__link">
+                            <i class="bx bxl-linkedin-square .social__icon"></i> @JulCodes
+                        </a>
+                        <a href="" target="_blank" class="social__link">
+                            <i class="bx bxl-facebook .social__icon"></i> @JulCodes
+                        </a>
+                        <a href="" target="_blank" class="social__link">
+                            <i class="bx bxl-instagram .social__icon"></i> @JulCodes
+                        </a>
+                    </div>
+                </section>
+
+                <!--========== PROFILE ==========-->
+                <section class="profile section" id="profile">
+                    <h2 class="section-title">Profile</h2>
+                    <p class="profile__description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore
+                        sequi ad, totam, aspernatur veritatis voluptatem cum iste itaque a accusamus eum laborum nihil
+                        perferendis. Atque necessitatibus explicabo vitae labore beatae.</p>
+
+                </section>
+
+                <!--========== EDUCATION ==========-->
+                <section class="education section" id="education">
+                    <h2 class="section-title">Education</h2>
+
+                    <div class="education__container bd-grid">
+                        <div class="education__content">
+                            <div class="education__time">
+                                <span class="education__rounder"></span>
+                                <span class="education__line"></span>
+                            </div>
+                            <div class="education__data bd-grid">
+                                <h3 class="education__title">Bachiller</h3>
+                                <span class="education__studies">Maria Josefa Escabar</span>
+                                <span class="education__year">2013-2018</span>
+                            </div>
+                        </div>
+                        <div class="education__content">
+                            <div class="education__time">
+                                <span class="education__rounder"></span>
+                                <!-- <span class="education__line"></span>-->
+                            </div>
+                            <div class="education__data bd-grid">
+                                <h3 class="education__title">Tecnico de Sistemas e Informatica</h3>
+                                <span class="education__studies">Compucec</span>
+                                <span class="education__year">2017-2018</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+                <!--========== SKILLS  ==========-->
+                <section class="skills section" id="skills">
+                    <h2 class="section-title">Skills</h2>
+
+                    <div class="skills__content bd-grid">
+                        <ul class="skills__data">
+                            <li class="skills__name">
+                                <span class="skills__circle"></span>Html
+                            </li>
+                            <li class="skills__name">
+                                <span class="skills__circle"></span> Css
+                            </li>
+                            <li class="skills__name">
+                                <span class="skills__circle"></span> JavaScript
+                            </li>                           
+                        </ul>
+                        
+                        <ul class="skills__data">
+                            <li class="skills__name">
+                                <span class="skills__circle"></span> React
+                            </li>
+                            <li class="skills__name">
+                                <span class="skills__circle"></span>React Native
+                            </li>
+                            <li class="skills__name">
+                                <span class="skills__circle"></span> FireBase
+                            </li>                            
+                        </ul>
+                    </div>
+                    
+
+                </section>
+
+            </div>
+
+            <div class="resume__right">
+                <!--========== EXPERIENCE ==========
+                <section class="experience section" id="experience">
+
+                </section>-->
+
+                <!--========== CERTIFICATES ==========-->
+                <section class="certificate section" id="certificates">
+                    <h2 class="section-title">Certificates</h2>
+
+                    <div class="certificate__container bd-grid">
+                        <div class="certificate__content">
+                            <h3 class="certificate__title">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta, a?</h3>
+                            <p class="certificate__title">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum accusantium recusandae eius, tempora dolor praesentium. Maiores, doloremque officiis iure fugiat quam saepe dolor?</p>
+                        </div>
+                        <div class="certificate__content">
+                            <h3 class="certificate__title">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta, a?</h3>
+                            <p class="certificate__title">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum accusantium recusandae eius, tempora dolor praesentium. Maiores, doloremque officiis iure fugiat quam saepe dolor?</p>
+                        </div>
+                        <div class="certificate__content">
+                            <h3 class="certificate__title">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta, a?</h3>
+                            <p class="certificate__title">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum accusantium recusandae eius, tempora dolor praesentium. Maiores, doloremque officiis iure fugiat quam saepe dolor?</p>
+                        </div>
+                        <div class="certificate__content">
+                            <h3 class="certificate__title">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta, a?</h3>
+                            <p class="certificate__title">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum accusantium recusandae eius, tempora dolor praesentium. Maiores, doloremque officiis iure fugiat quam saepe dolor?</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!--========== REFERENCES ==========
+                <section class="references section" id="references">
+
+                </section>-->
+
+                <!--========== LANGUAGES ==========-->
+                <section class="languages section">
+                    <h2 class="section-title">Languages</h2>
+
+                    <div class="languages__container">
+                        <ul class="languages__content bd-grid">
+                            <li class="languages__name">
+                                <span class="languages__circle"></span> Español
+                            </li>
+                            <li class="languages__name">
+                                <span class="languages__circle"></span> Ingles
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!--========== INTERESTS ==========-->
+                <section class="interests section">
+                    <h2 class="section-title">Interests</h2>
+
+                    <div class="interests__container bd-grid">
+                        <div class="interests__content">
+                            <i class="bx bx-headphone interests__icon"></i>
+                            <span class="interests__name"></span>Music
+                        </div>
+                        <div class="interests__content">
+                            <i class="bx bxs-plane-alt interests__icon"></i>
+                            <span class="interests__name"></span>Travel
+                        </div>
+                        <div class="interests__content">
+                            <i class="bx bx-book interests__icon"></i>
+                            <span class="interests__name"></span>Read
+                        </div>
+                        <div class="interests__content">
+                            <i class='bx bx-joystick interests__icon'></i>
+                            <span class="interests__name"></span>Gaming
+                        </div>
+                        
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <!--========== SCROLL TOP ==========-->
+    <a href="#" class="scrolltop" id="scroll-top">
+        <i class="bx bx-up-arrow-alt scrolltop__icon"></i>
+    </a>
+
+    <!--========== HTML2PDF ==========-->
+    <script src="assets/js/html2pdf.bundle.min.js"></script>
+
+    <!--========== MAIN JS ==========-->
+    <script src="assets/js/main.js"></script>
 </body>
+
 </html>

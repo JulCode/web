@@ -48,18 +48,87 @@ html
 }
 
 /*========== Variables Dark theme ==========*/
+.dark
+{
+  --title-color: #f2f2f2;
+  --text-color: #bfbfbf;
+  --container-color: #212121;
+  --container-color-alt: #333;
+  --body-color: #2b2b2b;
+}
 
 
 /*========== Button Dark/Light ==========*/
-
+.change-theme
+{
+  position: absolute;
+  right: 0;
+  top: 2.2rem;
+  display: flex;
+  color: var(--text-color);
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+.change-theme
+{
+  color: var(--title-color);
+}
+.change-theme::before
+{
+    content: '\f186';
+    font-family: fontAwesome;
+}
+.dark .change-theme::before
+{
+    content: '\f185';
+    font-family: fontAwesome;
+}
 
 /*========== Font size variables to scale cv ==========*/
-
+.generate-pdf
+{
+  display: none;
+  position: absolute;
+  top: 2.2rem;
+  left: 0;
+  font-size: 1.2rem;
+  color: var(--text-color);
+  cursor: pointer;
+}
+.generate-pdf:hover
+{
+  color: var(--title-color);
+}
 
 /*========== Generate PDF button ==========*/
-
+body.scale-cv
+{
+  --h1-font-size: .938rem;
+  --h2-font-size: .938rem;
+  --h3-font-size: .875rem;
+  --normal-font-size: .813rem;
+  --small-font-size: .75rem;
+  --smaller-font-size: .688rem;
+}
 
 /*========== Classes modified to reduce size and print on A4 sheet ==========*/
+.scale-cv .change-theme,
+.scale-cv .generate-pdf
+{
+  display: none;
+}
+.scale-cv .bd-container
+{
+  max-width: 595;
+}
+.scale-cv .section
+{
+  padding: 1.5rem 0 .80rem;
+}
+.scale-cv .section-title
+{
+  padding: 1.5rem 0 .80rem;
+}
 body
 {
   margin: 0 0 var(--header-height) 0;
@@ -426,7 +495,65 @@ img
 
 /*========== MEDIA QUERIES ==========*/
 /* For small devices, menu two columns */
-
-
+@media screen and (max-width: 320px) {
+  .nav_list
+  {
+    grid-template-columns: repeat(2,1fr);
+    gap: 1rem .5rem;
+  }
+}
 /* Classes modified for large screen size */
+@media screen and (min-width: 968px){
+  body
+  {
+    margin: 3rem;
+  }
+  .bd-container
+  {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .l-header,
+  .scrolltop
+  {
+    display: none;
+  }
+  .resume
+  {
+    display: grid;
+    grid-template-columns: .5fr 1fr;
+    background-color: var(--container-color);
+    box-shadow: 0 0 8px rgba(13,12,12,.15);
+  }
+  .resume__left
+  {
+    background-color: var(--container-color-alt);
+  }
+  .resume__left,
+  .resume__right
+  {
+    padding: 0 1.5rem;
+  }
+  .section-title
+  {
+    text-align: initial;
+  }
+  .home__container
+  {
+    gap: 1.5rem;
+  }
+  .home__button-movil
+  {
+    display: none;
+  }
+  .interests__container
+  {
+    grid-template-columns: (4, max-content);
+    column-gap: 3.5rem ;
+  }
+  .generate-pdf
+{
+  display: inline-block;
+}
+}
 

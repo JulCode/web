@@ -51,7 +51,11 @@ function scrollTop(){
 window.addEventListener('scroll', scrollTop)
 
 /*==================== DARK LIGHT THEME ====================*/ 
-
+let changeTheme = document.querySelector('.change-theme');
+let body = document.querySelector('body');
+changeTheme.onclick = function () {
+    body.classList.toggle('dark')
+}
 
 /*==================== REDUCE THE SIZE AND PRINT ON AN A4 SHEET ====================*/ 
 

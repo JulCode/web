@@ -129,6 +129,62 @@ body.scale-cv
 {
   padding: 1.5rem 0 .80rem;
 }
+.scale-cv .home__img
+{
+  width: 90px;
+  height: 90px;
+}
+.scale-cv .home__container
+{
+  gap: 1.5rem;
+}
+.scale-cv .home__data
+{
+  gap: .25rem;
+}
+.scale-cv .home__address,
+.scale-cv .social__container
+{
+  gap: .75rem;
+}
+.scale-cv .home__icon,
+.scale-cv .social__icon,
+.scale-cv .interests__icon
+{
+  font-size: 1rem;
+}
+.scale-cv .education__container,
+.scale-cv .certificate__container
+{
+  gap: 1rem;
+}
+.scale-cv .education__time
+{
+  padding-right: .5rem;
+}
+.scale-cv .education__rounder
+{
+  width: 11px;
+  height: 11px;
+}
+.scale-cv .education__line
+{
+  width: 1px;
+  height: 200%;
+  transform: translate(5px, 0);
+}
+.scale-cv .education__data
+{
+  gap: .25rem;
+}
+.scale-cv .skills__name
+{
+  margin-bottom: var(--mb-1);
+}
+.scale-cv .interests__container
+{
+  column-gap: 2.5rem;
+}
 body
 {
   margin: 0 0 var(--header-height) 0;

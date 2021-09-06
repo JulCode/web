@@ -671,6 +671,7 @@ top: calc(50% -75px);
     .themeSwitch
     {
         left: 20px;
+        top: 600px;
     }
     .navigation
     {

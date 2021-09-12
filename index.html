@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -13,35 +13,44 @@
 </head>
 
 <body>
+    <div id="google_translate_element2" class="goo"></div>   
     <div class="container">
         <div class="navigation">
-            <ul>
-                <li><a href="#banner" onclick="toggleMenu()">Home</a></li>
-                <li><a href="#about" onclick="toggleMenu()">About</a></li>
-                <li><a href="#services" onclick="toggleMenu()">Services</a></li>
-                <li><a href="#project" onclick="toggleMenu()">Project</a></li>
-                <li><a href="#contact" onclick="toggleMenu()">Contacts</a></li>
+            <ul>              
+                <li><a href="#banner" onclick="toggleMenu()">Hogar</a></li>
+                <li><a href="#about" onclick="toggleMenu()">Acerca de</a></li>
+                <li><a href="#services" onclick="toggleMenu()">Servicios</a></li>
+                <li><a href="#project" onclick="toggleMenu()">Proyectos</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contacto</a></li>
             </ul>
             <div class="themeSwitch"></div>
         </div>
 
         <div class="main">
+            
             <div class="topbar">
+                <div><a href="#" onclick="doGTranslate('es|en');return false;" title="Ingles" class="gflag">
+                    <img src="img/estados-unidos.png" height="30"
+                        width="30" alt="Ingles" /></a>
+                <a href="#" onclick="doGTranslate('es|es');return false;" title="Español" class="gflag"
+                ><img src="img/banderas.png"
+                        height="30" width="30" alt="Español" /></a></div>
                 <a href="#" class="logo">Portfolio</a>
                 <div class="toggle">
                     <i class="fa fa-bars aria-hidden=" true"></i>
                 </div>
             </div>
-
+ 
             <!--Banner-->
             <section class="banner adjust" id="banner">
+                              
                 <div class="content">
                     <div class="imgBx">
                         <img src="img/user.png">
                     </div>
                     <h3>Julian Vivas</h3>
-                    <p>I'am Web/mobile Developer.</p>
-                    <a href="cv/cv.html" class="btn">Download My CV</a>
+                    <p>Desarrollador Web.</p>
+                    <a href="cv/cv.html" class="btn">Descarga my CV</a>
                     <ul class="socialmedia">
                         <li><a href="https://www.facebook.com/JulCodes-143307717863739"><i class="fa fa-facebook"
                                     aria-hidden="true"></i></a></li>
@@ -49,32 +58,38 @@
                         </li>
                         <li><a href="https://www.linkedin.com/in/julian-vivas-estrada-aa2680217/"><i
                                     class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                        <li><a href="https://www.instagram.com/julcodes01/"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                        <li><a href="https://www.instagram.com/julcodes01/"><i class="fa fa-instagram"
+                                    aria-hidden="true"></i></a></li>
                     </ul>
                 </div>
             </section>
             <!-- About -->
             <section class="about adjust" id="about">
                 <div class="title">
-                    <h2>About Me</h2>
+                    <h2>Sobre mí</h2>
                 </div>
                 <div class="content">
                     <div class="texbox">
-                        <p>I am a Student of Systems Engineering with Development and Web Designer Interest also in the
-                            development of APP.I seek to carry out projects which provide meancy to improve my skills in
-                            the schedule of programming. I like to solve the problems in the most quick and creative way
-                            possible so that the project in which you are working will fulfill all expectations. </p>
+                        <p>
+                            Hola, soy Julian Vivas, soy de Medellin-Colombia, un amate del desarrollo web y estudiante
+                            de ingenieria de sistemas.<br>
+                            Tengo intereses en la programición y el deserrollo desde el 2018, he trabajado con algunas
+                            tecnologias web, mobiles y de escritorio.
+                            <br>
+                            Me gusta solucionar los problemas de la forma más rápida y creativa posible para que el
+                            proyecto en el que esté trabajando cumpla con todas las expectativas.
+                        </p>
                     </div>
                     <div class="imgBx">
-                        <img src="img/unu.jpg">
+                        <img src="img/about.jfif">
                     </div>
                 </div>
             </section>
             <!-- Service -->
             <section class="services adjust" id="services">
                 <div class="title">
-                    <h2>Our Services</h2>
-                    <p>These are some of the services in which I perform.</p>
+                    <h2>Servicios</h2>
+                    <p>Estos son algunos de los servicios en los que me desempeño.</p>
                 </div>
                 <div class="content">
                     <div class="card">
@@ -82,23 +97,25 @@
                             <img src="img/icon1.png">
                         </div>
                         <div class="content2">
-                        <div>
-                            <h2>Web Desing</h2>
-                            <p>I already have a good time working on web design giving you a good creative and striking
-                                design to the pages in which I have worked.Some of the tools I use that giving the best
-                                performance in the area are: Figma, Typecast, Mockflow and Adobe Dreamweaver.</p>
+                            <div>
+                                <h2>Diseño Web</h2>
+                                <p>Trabajo en diseño web dándoles un buen diseño creativo y llamativo a las páginas en
+                                    las que he trabajado. algunas de las herramientas que utilizo para dar el mejor
+                                    rendimiento en el área son: Figma, Typecast, Mockflow y Adobe Dreamweaver.</p>
+                            </div>
                         </div>
-                        </div>
-                    </div>                
+                    </div>
                     <div class="card">
                         <div class="imgBx">
                             <img src="img/icon2.png">
                         </div>
                         <div class="content2">
-                        <div>
-                            <h2>Web Development </h2>
-                            <p> For the Development Area I perform mainly on developing the architecture of a website, user interfaces and backend, for this work with: HTML, JavaScript, React and Node.</p>
-                        </div>
+                            <div>
+                                <h2>Desarrolo Web </h2>
+                                <p>Para el Área de Desarrollo me desempeño principalmente en el desarrollo de la
+                                    arquitectura de un sitio web, interfaces de usuario y backend, para esto trabajo
+                                    con: HTML, JavaScript, React y Node.</p>
+                            </div>
                         </div>
                     </div>
                     <div class="card">
@@ -106,20 +123,22 @@
                             <img src="img/icon3.png">
                         </div>
                         <div class="content2">
-                        <div>
-                            <h2>App Development</h2>
-                            <p>I play in Native Mobile Development to develop an APP which can be used both in Android and IOS and on the Web.The frameworks that I use for the construction of these apps are: react native and expo cli. </p>
-                        </div>
+                            <div>
+                                <h2>Desarrollo de APPs</h2>
+                                <p>Trabajo con leguajes hibridos para desarrollar una APP que se pueda utilizar tanto en
+                                    Android como en IOS y en la Web. Los frameworks que utilizo para la construcción de
+                                    estas aplicaciones son: react native y expo cli.</p>
+                            </div>
                         </div>
                     </div>
-                                        
+
                 </div>
             </section>
             <!-- Projects -->
             <section class="project adjust" id="project">
                 <div class="title">
-                    <h2>Recent Work</h2>
-                    <p>these are some of my projects. these include a repository on github.</p>
+                    <h2>Trabajos recientes</h2>
+                    <p>Estos son algunos de mis más recientes proyectos, junto a su repositorio en github.</p>
                 </div>
                 <div class="content">
                     <div class="workBx">
@@ -162,8 +181,8 @@
             <!-- Contact-->
             <section class="contact adjust" id="contact">
                 <div class="title">
-                    <h2>Let' Say Hi</h2>
-                    <p>You can also contact me through this form by sending me a message and contact information.</p>
+                    <h2>Contáctame</h2>
+                    <p>También puedes contactarme a través de este formulario enviándome un mensaje e información de contacto.</p>
                 </div>
                 <div class="contactForm">
                     <div class="row">
@@ -186,7 +205,8 @@
             <p class="copyright">Copyright © 2021 Julian Vivas. All Right Reserved.</p>
         </div>
     </div>
-
+    <script type="text/javascript"
+        src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit2"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/node-uuid/1.4.7/uuid.min.js"></script>
 </body>
 <script src="script.js"></script>

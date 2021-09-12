@@ -5,11 +5,13 @@ let main = document.querySelector('.main');
 let themeSwitch = document.querySelector('.themeSwitch');
 let body = document.querySelector('body');
 let googltranslate = document.getElementById('google_translate_element')
+let idioma = document.querySelector('.leng');
 toggle.onclick = function () {
     toggle.classList.toggle('active');
     topbar.classList.toggle('active');
     navigation.classList.toggle('active');
     main.classList.toggle('active');
+    idioma.classList.toggle('remove');
 }
 // theme switch toggle
 themeSwitch.onclick = function () {
@@ -21,6 +23,7 @@ function toggleMenu() {
     let main = document.querySelector('.main');
     navigation.classList.remove('active');
     main.classList.remove('active');
+    idioma.classList.remove('remove');
 }
 //translate
 function googleTranslateElementInit2() {

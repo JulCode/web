@@ -34,8 +34,10 @@ window.addEventListener('load', () => {
 			const ruta = elemento.getAttribute('src');
 			const descripcion = elemento.parentNode.parentNode.dataset.descripcion;
 
+
+
 			overlay.classList.add('activo');
-			document.querySelector('#overlay img').src = ruta;
+			document.querySelector('#overlay img').src = ruta;			
 			document.querySelector('#overlay .descripcion').innerHTML = descripcion;
 		});
 	});

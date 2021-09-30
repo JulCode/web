@@ -14,7 +14,7 @@
 	<div class="contenedor">
 		<header>
 			<div class="logo">
-				<h1>Metalicas Hamikar</h1>
+				<h1>Metalicas H.V.</h1>
 				<p>Cerrajeria</p>
 			</div>
 			<form action="">
@@ -33,7 +33,7 @@
 		<section class="grid" id="grid">
 			<div class="item" 
 				 data-categoria="puertas"
-				 data-etiquetas=""
+				 data-etiquetas="uwu"
 				 data-descripcion="1.- Lorem ipsum dolor sit amet consectetur."
 			>
 				<div class="item-contenido">
@@ -116,8 +116,7 @@
 			<div class="item"
 				 data-categoria="estructuras"
 				 data-etiquetas=""
-				 data-descripcion="9.- Lorem ipsum dolor sit amet consectetur.
-				 	"
+				 data-descripcion="9.- Lorem ipsum dolor sit amet consectetur."
 			>
 				<div class="item-contenido">
 					<img src="img/estructuras1.png" alt="">
@@ -136,11 +135,30 @@
 		</section>
 
 		<section class="overlay" id="overlay">
-			<div class="contenedor-img">
-				<button id="btn-cerrar-popup"><i class="fas fa-times"></i></button>
+			<button id="btn-cerrar-popup"><i class="fas fa-times"></i></button>
+			<div class="container">
+			<div class="contenedor-img">				
 				<img src="" alt="">
 			</div>
-			<p class="descripcion"></p>
+			
+			<div class="contactForm">
+				<p class="descripcion"></p>
+				<div class="row row3">
+					<input type="text" name="nomre" id="name" placeholder="Nombre Completo">					
+				</div>
+				<div class="row">
+					<input type="text" name="mail" id="email" placeholder="Correo Electronico">
+					<input type="text" name="phone" id="phone" placeholder="Número de Telefono">
+				</div>
+				<div class="row2">
+					<textarea name="message" id="message" placeholder="Message"></textarea>
+				</div>
+				<div id="alert" class="row2"></div>
+				<div class="row2">
+					<button onclick="save()">Send</button>
+				</div>
+			</div>
+			</div>
 		</section>
 
 		<footer class="contenedor">

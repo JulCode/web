@@ -14,19 +14,20 @@ var database = firebase.database()
 
 function save() {
 
-  if (document.getElementById("name").value != ""|| document.getElementById("email").value != "" || document.getElementById("phone").value != "" || document.getElementById("message").value != "") {
+
+  if (document.getElementById("name").value != "" && document.getElementById("email").value != "" && document.getElementById("message").value != "" && document.getElementById("phone").value != "") {
+    const phoneNumber = phoneInput.getNumber();
     document.getElementById("alert").innerHTML = ""
     var fname = document.getElementById("name").value
     var lname = document.getElementById("lname").value
     var email = document.getElementById("email").value
-    var phone = document.getElementById("phone").value
     var message = document.getElementById("message").value
-
+    
     database.ref('client/' + uuid.v4() ).set({
       FirstName: fname,
       LastName: lname,
       Email: email,
-      Phone: phone,
+      Phone: phoneNumber,
       Message: message     
     })   
     document.getElementById("name").value = "";
@@ -36,7 +37,7 @@ function save() {
     document.getElementById("message").value = "";
 
   } else {
-    document.getElementById("alert").innerHTML = "por favor rellene los datos para enviar el formulario"
+    document.getElementById("alert").innerHTML = "por favor rellene todos los datos para enviar el formulario"
   }
 }
 

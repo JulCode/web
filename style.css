@@ -7,13 +7,13 @@
     font-family: 'Poppins', sans-serif;
     scroll-behavior: smooth;
 }
-:root
-{
-    --black:#333;
-    --black2: #333;
-    --white: #fff;
-    --white2: #fff;
-}
+    :root
+    {
+        --black:#333;
+        --black2: #333;
+        --white: #fff;
+        --white2: #fff;
+    }
 .dark
 {
     --black:#fff;
@@ -594,9 +594,14 @@ top: calc(50% -75px);
     align-items: center;
     margin-top: 20px;
 }
+.contact .contactForm .row input#phone{
+    padding-right: 6px;
+    padding-left: 52px;
+}
 .contact .contactForm .row input,
 .contact .contactForm .row2 textarea
 {
+    
     width: 100%;
     padding: 10px;
     border: none;
@@ -641,6 +646,11 @@ top: calc(50% -75px);
 {
     background: #2196f3 ;
 }
+/*para no perder el color de las letras de country-list*/
+.iti__country-list{
+    color: #333;
+}
+
 .copyright
 {
     position: relative;
